@@ -20,7 +20,7 @@
 ``` json
 {
 	"protocol":1,
-	"status":0: success; 1: name not exist; 2: username error; 3: other 
+	"status":0, // 0: success; 1: name not exist; 2: username error; 3: other 
 	"token":"",
 	"userId":""
 }
@@ -47,7 +47,7 @@
 ``` json
 {
 	"protocol":1,
-	"status":0: success;1: user not exist; 2: username error; 3: other 
+	"status":0, //0: success;1: user not exist; 2: username error; 3: other 
 	"userDetails": {
 		"nickName":"",
 		"name":"",
@@ -82,7 +82,7 @@
 ``` json
 {
 	"protocol":1,
-	"status":0: success; 1: user already exist; 2: failed
+	"status":0, // 0: success; 1: user already exist; 2: failed
 	"token":"",
 	"userId":""
 }
@@ -100,7 +100,7 @@
 	"userDetails": {
 		"nickName":"",
 		"name":"",
-		"sex":0:boy; 1: girl,
+		"sex":0, // 0:boy; 1: girl,
 		"age":24,
 		"mobilePhone":"",
 		"sign":"",
@@ -115,6 +115,6 @@
 ``` json
 {
 	"protocol":1,
-	"status":0: success; 1: failed
+	"status":0 // 0: success; 1: failed
 }
 ```
