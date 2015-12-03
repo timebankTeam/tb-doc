@@ -86,7 +86,7 @@
 {
 	"protocol":1,
 	"status":0,
-	"!!!commentHere":"for status, 0: success; 1: user already exist; 2: failed"
+	"!!!commentHere":"for status, 0: success; 1: user already exist; 2: failed",
 	"token":"",
 	"userId":""
 }
@@ -105,7 +105,7 @@
 		"nickName":"",
 		"name":"",
 		"sex":0,
-		"!!!commentHere:":"for sex, 0:boy; 1: girl"
+		"!!!commentHere:":"for sex, 0:boy; 1: girl",
 		"age":24,
 		"mobilePhone":"",
 		"sign":"",
