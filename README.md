@@ -8,8 +8,7 @@
 {
 	"protocol":1,
 	"token":"",
-	"useId":"",
-	"userInfo":{
+	"loginRequest":{
 		"mobileNumber":"",
 		"password":""
 	}
@@ -22,8 +21,10 @@
 	"protocol":1,
 	"status":0,
 	"!!!commentHere":"for status, 0: success; 1: user not exist; 2: password error; 3: other",
-	"token":"",
-	"userId":""
+	"loginResponse":{
+		"token":"",
+		"userId":""
+	}
 }
 ```
 
@@ -35,11 +36,9 @@
 {
 	"protocol":1,
 	"token":"",
-	"userId":"",
 	"!!!commentHere":"I think that when trying to get user details, we need to identify user as well.",
-	"userInfo":{
-		"mobile":"",
-		"password":""
+	"userDetailRequest":{
+		"userId":""
 	}
 }
 ```
@@ -50,7 +49,7 @@
 	"protocol":1,
 	"status":0,
 	"!!!commentHere":"for status, 0: success;1: user not exist; 2: password error; 3: other",
-	"userDetails": {
+	"userDetailResponse": {
 		"nickName":"",
 		"name":"",
 		"sex":0,
@@ -73,8 +72,7 @@
 {
 	"protocol":1,
 	"token":"",
-	"useId":"",
-	"userInfo":{
+	"registRequest":{
 		"mobile":"",
 		"password":""
 	}
@@ -87,8 +85,10 @@
 	"protocol":1,
 	"status":0,
 	"!!!commentHere":"for status, 0: success; 1: user already exist; 2: failed",
-	"token":"",
-	"userId":""
+	"registResponse":{
+		"token":"",
+		"accountId":""
+	}
 }
 ```
 
@@ -100,8 +100,8 @@
 {
 	"protocol":1,
 	"token":"",
-	"useId":"",
-	"userDetails": {
+	"createUserDetailRequest": {
+		"accountId":"",
 		"nickName":"",
 		"name":"",
 		"sex":0,
@@ -122,5 +122,8 @@
 	"protocol":1,
 	"status":0,
 	"!!!commentHere":"for status, 0: success; 1: failed",
+	"createUserDetailResponse":{
+		"userId"
+	}
 }
 ```
