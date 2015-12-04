@@ -73,7 +73,7 @@
 	"protocol":1,
 	"token":"",
 	"registRequest":{
-		"mobile":"",
+		"mobilePhone":"",
 		"password":""
 	}
 }
@@ -123,7 +123,7 @@
 	"status":0,
 	"!!!commentHere":"for status, 0: success; 1: failed",
 	"createUserDetailResponse":{
-		"userId"
+		"userId":""
 	}
 }
 ```
