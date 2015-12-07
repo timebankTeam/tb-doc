@@ -9,7 +9,7 @@
 	"protocol":1,
 	"token":"",
 	"loginRequest":{
-		"mobileNumber":"",
+		"mobilePhone":"",
 		"password":""
 	}
 }
@@ -23,7 +23,7 @@
 	"!!!commentHere":"for status, 0: success; 1: user not exist; 2: password error; 3: other",
 	"loginResponse":{
 		"token":"",
-		"userId":""
+		"accountId":""
 	}
 }
 ```
@@ -123,6 +123,30 @@
 	"status":0,
 	"!!!commentHere":"for status, 0: success; 1: failed",
 	"createUserDetailResponse":{
+		"userId":""
+	}
+}
+```
+
+##5. Get user id by account id
+### 5.1 Request
+``` json
+{
+	"protocol":1,
+	"token":"",
+	"GetUserIdRequest": {
+		"accountId":""
+	}
+}
+```
+
+### 5.2 Response
+``` json
+{
+	"protocol":1,
+	"status":0,
+	"!!!commentHere":"for status, 0: success; 1: failed",
+	"GetUserIdResponse":{
 		"userId":""
 	}
 }
