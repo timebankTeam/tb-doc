@@ -3,25 +3,29 @@
 ---
 
 ## 1. Login
-### 1.1 Request
+### Url
+	/login
+### Method
+	Post
+### Request
 ``` json
 {
 	"protocol":1,
 	"token":"",
-	"loginRequest":{
+	"request":{
 		"mobilePhone":"",
 		"password":""
 	}
 }
 ```
 
-### 1.2 Response
+### Response
 ``` json
 {
 	"protocol":1,
 	"status":0,
 	"!!!commentHere":"for status, 0: success; 1: user not exist; 2: password error; 3: other",
-	"loginResponse":{
+	"response":{
 		"token":"",
 		"accountId":""
 	}
@@ -31,25 +35,29 @@
 ---
 
 ## 2. Request Detail
-### 2.1 Request
+### Url
+	/user/detail
+### Method
+	Get
+### Request
 ``` json
 {
 	"protocol":1,
 	"token":"",
 	"!!!commentHere":"I think that when trying to get user details, we need to identify user as well.",
-	"userDetailRequest":{
+	"request":{
 		"userId":""
 	}
 }
 ```
 
-### 2.2 Response
+### Response
 ``` json
 {
 	"protocol":1,
 	"status":0,
 	"!!!commentHere":"for status, 0: success;1: user not exist; 2: password error; 3: other",
-	"userDetailResponse": {
+	"response": {
 		"nickName":"",
 		"name":"",
 		"sex":0,
@@ -67,12 +75,16 @@
 ---
 
 ## 3. Regist
-### 3.1 Request
+### Url
+	/regist
+### Method
+	Post
+### Request
 ``` json
 {
 	"protocol":1,
 	"token":"",
-	"registRequest":{
+	"request":{
 		"mobilePhone":"",
 		"password":""
 	}
@@ -85,7 +97,7 @@
 	"protocol":1,
 	"status":0,
 	"!!!commentHere":"for status, 0: success; 1: user already exist; 2: failed",
-	"registResponse":{
+	"response":{
 		"token":"",
 		"accountId":""
 	}
@@ -95,12 +107,16 @@
 ---
 
 ## 4. Add Detail
-### 4.1 Request
+### Url
+	/user/detail
+### Method
+	Post
+### Request
 ``` json
 {
 	"protocol":1,
 	"token":"",
-	"createUserDetailRequest": {
+	"request": {
 		"accountId":"",
 		"nickName":"",
 		"name":"",
@@ -116,37 +132,41 @@
 }
 ```
 
-### 4.2 Response
+### Response
 ``` json
 {
 	"protocol":1,
 	"status":0,
 	"!!!commentHere":"for status, 0: success; 1: failed",
-	"createUserDetailResponse":{
+	"response":{
 		"userId":""
 	}
 }
 ```
 
 ##5. Get user id by account id
-### 5.1 Request
+### Url
+	/user/id
+### Method
+	Get
+### Request
 ``` json
 {
 	"protocol":1,
 	"token":"",
-	"GetUserIdRequest": {
+	"request": {
 		"accountId":""
 	}
 }
 ```
 
-### 5.2 Response
+### Response
 ``` json
 {
 	"protocol":1,
 	"status":0,
 	"!!!commentHere":"for status, 0: success; 1: failed",
-	"GetUserIdResponse":{
+	"response":{
 		"userId":""
 	}
 }
