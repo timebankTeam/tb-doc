@@ -210,9 +210,9 @@
 }
 ```
 
-## 6.2 Get activities
+## 6.2 Get campaigns
 ### Url
-	/activities/list
+	/campaigns/list
 ### Method
 	Get
 ### Request
@@ -233,11 +233,11 @@
 	"status":0,
 	"!!!commentHere":"for status, 0: success; 1: failed",
 	"response":{
-		"campaignOwner":
+		"campaignOwner":"",
 		"campaignName":"",
 		"campaignTye":2,
-		"startDate":"",
-		"length":50,###单位为小时
+		"startDate":1400000000,
+		"length":50,
 		"timeCoin":50,
 		"location":"",
 		"max":20,
@@ -245,14 +245,14 @@
 		"contactPerson":"",
 		"mobilePhone":"",
 		"description":"",
-		"campaignStatus":1 !!!1.报名中 2.报名已满 3.进行中 4.活动结束
+		"campaignStatus":1
 	}
 }
 ```
 
-## 6.3 Join activities
+## 6.3 Join campaigns
 ### Url
-	/activities/join
+	/campaigns/join
 ### Method
 	Post
 ### Request
@@ -261,7 +261,7 @@
 	"protocol":1,
 	"token":"",
 	"request": {
-		"activityId":"",
+		"campaignId":"",
 		"userId":""
 	}
 }
@@ -274,7 +274,7 @@
 	"status":0,
 	"!!!commentHere":"for status, 0: success; 1: failed",
 	"response":{
-		"activityId":""
+		"campaignId":""
 	}
 }
 ```
