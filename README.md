@@ -144,7 +144,7 @@
 }
 ```
 
-##5. Get user id by account id
+## 5. Get user id by account id
 ### Url
 	/user/id
 ### Method
@@ -168,6 +168,113 @@
 	"!!!commentHere":"for status, 0: success; 1: failed",
 	"response":{
 		"userId":""
+	}
+}
+```
+# 6.campaigns
+## 6.1 Create campaign
+### Url
+	/campaigns/create
+### Method
+	Post
+### Request
+``` json
+{
+	"protocol":1,
+	"token":"",
+	"request": {
+		"campaignOwner":"",
+		"campaignName":"",
+		"startDate":"",
+		"length":50,!!!单位为小时
+		"timeCoin":50,
+		"location":"",
+		"max":20,
+		"min":10,
+		"contactPerson":"",
+		"mobilePhone":"",
+		"description":""
+	}
+}
+```
+
+### Response
+``` json
+{
+	"protocol":1,
+	"status":0,
+	"!!!commentHere":"for status, 0: success; 1: failed",
+	"response":{
+		"campaignId":""
+	}
+}
+```
+
+## 6.2 Get activities
+### Url
+	/activities/list
+### Method
+	Get
+### Request
+``` json
+{
+	"protocol":1,
+	"token":"",
+	"request": {
+		"campaignType":2 !!!个人活动
+	}
+}
+```
+
+### Response
+``` json
+{
+	"protocol":1,
+	"status":0,
+	"!!!commentHere":"for status, 0: success; 1: failed",
+	"response":{
+		"campaignOwner":
+		"campaignName":"",
+		"campaignTye":2,
+		"startDate":"",
+		"length":50,###单位为小时
+		"timeCoin":50,
+		"location":"",
+		"max":20,
+		"min":10,
+		"contactPerson":"",
+		"mobilePhone":"",
+		"description":"",
+		"campaignStatus":1 !!!1.报名中 2.报名已满 3.进行中 4.活动结束
+	}
+}
+```
+
+## 6.3 Join activities
+### Url
+	/activities/join
+### Method
+	Post
+### Request
+``` json
+{
+	"protocol":1,
+	"token":"",
+	"request": {
+		"activityId":"",
+		"userId":""
+	}
+}
+```
+
+### Response
+``` json
+{
+	"protocol":1,
+	"status":0,
+	"!!!commentHere":"for status, 0: success; 1: failed",
+	"response":{
+		"activityId":""
 	}
 }
 ```
