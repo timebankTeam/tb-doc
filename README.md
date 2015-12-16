@@ -278,3 +278,44 @@
 	}
 }
 ```
+
+
+## 6.4 Get my campaigns
+### Url
+	/campaigns/myList
+### Method
+	Get
+### Request
+``` json
+{
+	"protocol":1,
+	"token":"",
+	"request": {
+		"role":""
+	}
+}
+```
+
+### Response
+``` json
+{
+	"protocol":1,
+	"status":0,
+	"!!!commentHere":"for status, 0: success; 1: failed",
+	"response":{
+		"campaignOwner":"",
+		"campaignName":"",
+		"campaignTye":2,
+		"startDate":1400000000,
+		"length":50,
+		"timeCoin":50,
+		"location":"",
+		"max":20,
+		"min":10,
+		"contactPerson":"",
+		"mobilePhone":"",
+		"description":"",
+		"campaignStatus":1
+	}
+}
+```
