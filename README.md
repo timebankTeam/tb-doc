@@ -116,18 +116,15 @@
 {
 	"protocol":1,
 	"token":"",
+	"accountId":"",
 	"request": {
-		"accountId":"",
 		"nickName":"",
 		"name":"",
 		"sex":0,
-		"!!!commentHere:":"for sex, 0:boy; 1: girl",
 		"age":24,
 		"mobilePhone":"",
 		"sign":"",
-		"profession":"",
-		"creditLevel":"",
-		"timeCoin":""
+		"profession":""
 	}
 }
 ```
@@ -221,7 +218,7 @@
 	"protocol":1,
 	"token":"",
 	"request": {
-		"campaignType":2 !!!个人活动
+		"campaignType":2
 	}
 }
 ```
