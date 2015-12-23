@@ -1,37 +1,21 @@
 # Protocol
-
----
-
-## 1. Login
+## 1.GetValidationCode
 ### Url
-	/login
+	/validationCode
 ### Method
-	Post
+	Get
 ### Request
 ``` json
 {
-	"protocol":1,
-	"token":"",
-	"request":{
-		"mobilePhone":"",
-		"password":""
-	}
+	"mobilePhone":"xxxxxx"
 }
 ```
-
 ### Response
 ``` json
 {
-	"protocol":1,
-	"status":0,
-	"!!!commentHere":"for status, 0: success; 1: user not exist; 2: password error; 3: other",
-	"response":{
-		"token":"",
-		"accountId":""
-	}
+	"validationCode":""
 }
 ```
-
 ---
 
 ## 2. Request Detail
@@ -42,33 +26,22 @@
 ### Request
 ``` json
 {
-	"protocol":1,
-	"token":"",
-	"!!!commentHere":"I think that when trying to get user details, we need to identify user as well.",
-	"request":{
-		"userId":""
-	}
+	"userId":"xxxxxx"
 }
 ```
 
 ### Response
 ``` json
 {
-	"protocol":1,
-	"status":0,
-	"!!!commentHere":"for status, 0: success;1: user not exist; 2: password error; 3: other",
-	"response": {
-		"nickName":"",
-		"name":"",
-		"sex":0,
-		"!!!commentHere":"0:boy; 1: girl",
-		"age":24,
-		"mobilePhone":"",
-		"sign":"",
-		"profession":"",
-		"creditLevel":"",
-		"timeCoin":""
-	}
+	"nickName":"",
+	"name":"",
+	"sex":0,
+	"age":24,
+	"mobilePhone":"",
+	"sign":"",
+	"profession":"",
+	"creditLevel":"",
+	"timeCoin":""
 }
 ```
 
@@ -82,25 +55,17 @@
 ### Request
 ``` json
 {
-	"protocol":1,
-	"token":"",
-	"request":{
-		"mobilePhone":"",
-		"password":""
-	}
+	"mobilePhone":"",
+	"validationCode":"xxxxx"
+
 }
 ```
 
 ### 3.2 Response
 ``` json
 {
-	"protocol":1,
-	"status":0,
-	"!!!commentHere":"for status, 0: success; 1: user already exist; 2: failed",
-	"response":{
-		"token":"",
-		"accountId":""
-	}
+	"status":
+	"userId":
 }
 ```
 
@@ -114,60 +79,25 @@
 ### Request
 ``` json
 {
-	"protocol":1,
-	"token":"",
-	"accountId":"",
-	"request": {
-		"nickName":"",
-		"name":"",
-		"sex":0,
-		"age":24,
-		"mobilePhone":"",
-		"sign":"",
-		"profession":""
-	}
+	"nickName":"",
+	"name":"",
+	"sex":0,
+	"age":24,
+	"mobilePhone":"",
+	"sign":"",
+	"profession":""
 }
 ```
 
 ### Response
 ``` json
 {
-	"protocol":1,
-	"status":0,
-	"!!!commentHere":"for status, 0: success; 1: failed",
-	"response":{
-		"userId":""
-	}
+
+	"userId":""
+
 }
 ```
 
-## 5. Get user id by account id
-### Url
-	/user/id
-### Method
-	Get
-### Request
-``` json
-{
-	"protocol":1,
-	"token":"",
-	"request": {
-		"accountId":""
-	}
-}
-```
-
-### Response
-``` json
-{
-	"protocol":1,
-	"status":0,
-	"!!!commentHere":"for status, 0: success; 1: failed",
-	"response":{
-		"userId":""
-	}
-}
-```
 # 6.campaigns
 ## 6.1 Create campaign
 ### Url
@@ -177,33 +107,24 @@
 ### Request
 ``` json
 {
-	"protocol":1,
-	"token":"",
-	"request": {
-		"campaignOwner":"",
-		"campaignName":"",
-		"startDate":"",
-		"length":50,!!!单位为小时
-		"timeCoin":50,
-		"location":"",
-		"max":20,
-		"min":10,
-		"contactPerson":"",
-		"mobilePhone":"",
-		"description":""
-	}
+	"campaignOwner":"",
+	"campaignName":"",
+	"startDate":"",
+	"length":50,
+	"timeCoin":50,
+	"location":"",
+	"max":20,
+	"min":10,
+	"contactPerson":"",
+	"mobilePhone":"",
+	"description":""
 }
 ```
 
 ### Response
 ``` json
 {
-	"protocol":1,
-	"status":0,
-	"!!!commentHere":"for status, 0: success; 1: failed",
-	"response":{
-		"campaignId":""
-	}
+	"status":""
 }
 ```
 
@@ -215,35 +136,26 @@
 ### Request
 ``` json
 {
-	"protocol":1,
-	"token":"",
-	"request": {
-		"campaignType":2
-	}
+	"campaignType":2
 }
 ```
 
 ### Response
 ``` json
 {
-	"protocol":1,
-	"status":0,
-	"!!!commentHere":"for status, 0: success; 1: failed",
-	"response":{
-		"campaignOwner":"",
-		"campaignName":"",
-		"campaignTye":2,
-		"startDate":1400000000,
-		"length":50,
-		"timeCoin":50,
-		"location":"",
-		"max":20,
-		"min":10,
-		"contactPerson":"",
-		"mobilePhone":"",
-		"description":"",
-		"campaignStatus":1
-	}
+	"campaignOwner":"",
+	"campaignName":"",
+	"campaignTye":2,
+	"startDate":1400000000,
+	"length":50,
+	"timeCoin":50,
+	"location":"",
+	"max":20,
+	"min":10,
+	"contactPerson":"",
+	"mobilePhone":"",
+	"description":"",
+	"campaignStatus":1
 }
 ```
 
@@ -255,64 +167,146 @@
 ### Request
 ``` json
 {
-	"protocol":1,
-	"token":"",
-	"request": {
-		"campaignId":"",
-		"userId":""
-	}
+	"campaignId":"",
+	"userId":""
 }
 ```
 
 ### Response
 ``` json
 {
-	"protocol":1,
-	"status":0,
-	"!!!commentHere":"for status, 0: success; 1: failed",
-	"response":{
-		"campaignId":""
-	}
+	"status":
 }
 ```
 
 
 ## 6.4 Get my campaigns
 ### Url
-	/campaigns/myList
+	/campaigns/joined
 ### Method
 	Get
 ### Request
 ``` json
 {
-	"protocol":1,
-	"token":"",
-	"request": {
-		"role":""
-	}
+	"userId":""
 }
 ```
 
 ### Response
 ``` json
 {
-	"protocol":1,
-	"status":0,
-	"!!!commentHere":"for status, 0: success; 1: failed",
-	"response":{
-		"campaignOwner":"",
-		"campaignName":"",
-		"campaignTye":2,
-		"startDate":1400000000,
-		"length":50,
-		"timeCoin":50,
-		"location":"",
-		"max":20,
-		"min":10,
-		"contactPerson":"",
-		"mobilePhone":"",
-		"description":"",
-		"campaignStatus":1
-	}
+	"campaignOwner":"",
+	"campaignName":"",
+	"campaignTye":2,
+	"startDate":1400000000,
+	"length":50,
+	"timeCoin":50,
+	"location":"",
+	"max":20,
+	"min":10,
+	"contactPerson":"",
+	"mobilePhone":"",
+	"description":"",
+	"campaignStatus":1
+}
+```
+
+
+## 6.5 Get campaigns I created
+### Url
+	/campaigns/created
+### Method
+	Get
+### Request
+``` json
+{
+	"userId":""
+}
+```
+
+### Response
+``` json
+{
+	"campaignOwner":"",
+	"campaignName":"",
+	"campaignTye":2,
+	"startDate":1400000000,
+	"length":50,
+	"timeCoin":50,
+	"location":"",
+	"max":20,
+	"min":10,
+	"contactPerson":"",
+	"mobilePhone":"",
+	"description":"",
+	"campaignStatus":1
+}
+```
+
+## 6.6 Campaign evaluation
+### Url
+	/campaign/evaluation
+### Method
+	POST
+### Request
+``` json
+{
+	"userId":"",
+	"campaignId":"",
+	"campaignOwner":"",
+	"comments":"",
+	"starLevel":""
+}
+```
+
+### Response
+``` json
+{
+	"status":
+}
+```
+
+
+## 6.7 User evaluation
+### Url
+	/user/evaluation
+### Method
+	POST
+### Request
+``` json
+{
+	"userId":"",
+	"campaignId":"",
+	"campaignOwner":"",
+	"comments":"",
+	"starLevel":""
+}
+```
+
+### Response
+``` json
+{
+	"status":
+}
+```
+
+## 6.8 Evaluation
+### Url
+	/campaign/users
+### Method
+	GET
+### Request
+``` json
+{
+	"campaignId":""
+}
+```
+
+### Response
+``` json
+{
+	"userId":"",
+	"userName":"",
+	"nickName":""
 }
 ```
