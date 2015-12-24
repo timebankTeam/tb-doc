@@ -13,7 +13,8 @@
 ### Response
 ``` json
 {
-	"validationCode":""
+	"validationCode":"",
+	"status":
 }
 ```
 ---
@@ -64,8 +65,8 @@
 ### 3.2 Response
 ``` json
 {
-	"status":
-	"userId":
+	"status":0
+	"userId":"xxxxxxx"
 }
 ```
 
@@ -262,7 +263,7 @@
 ### Response
 ``` json
 {
-	"status":
+	"status":0
 }
 ```
 
@@ -286,7 +287,7 @@
 ### Response
 ``` json
 {
-	"status":
+	"status":0
 }
 ```
 
