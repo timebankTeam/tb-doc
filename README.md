@@ -157,7 +157,8 @@
 	"contactPerson":"",
 	"mobilePhone":"",
 	"description":"",
-	"campaignStatus":1
+	"campaignStatus":1,
+	"campaignId":""
 }
 ```
 
@@ -209,7 +210,8 @@
 	"contactPerson":"",
 	"mobilePhone":"",
 	"description":"",
-	"campaignStatus":1
+	"campaignStatus":1,
+	"campaignId":""
 }
 ```
 
@@ -241,7 +243,8 @@
 	"contactPerson":"",
 	"mobilePhone":"",
 	"description":"",
-	"campaignStatus":1
+	"campaignStatus":1,
+	"campaignId":""
 }
 ```
 
