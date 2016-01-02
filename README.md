@@ -41,8 +41,8 @@
 	"mobilePhone":"",
 	"sign":"",
 	"profession":"",
-	"creditLevel":"",
-	"timeCoin":""
+	"creditLevel":3,
+	"timeCoin":20
 }
 ```
 
@@ -65,7 +65,7 @@
 ### 3.2 Response
 ``` json
 {
-	"status":0
+	"status":0,
 	"userId":"xxxxxxx"
 }
 ```
