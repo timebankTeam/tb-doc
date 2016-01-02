@@ -185,7 +185,7 @@
 
 ## 6.4 Get my campaigns
 ### Url
-	/campaigns/joined
+	/campaigns/my_joined
 ### Method
 	Get
 ### Request
@@ -218,7 +218,7 @@
 
 ## 6.5 Get campaigns I created
 ### Url
-	/campaigns/created
+	/campaigns/my_created
 ### Method
 	Get
 ### Request
