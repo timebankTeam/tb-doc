@@ -84,7 +84,8 @@
 	"name":"",
 	"sex":0,
 	"age":24,
-	"mobilePhone":"",
+	"accountId":"",
+	"idNumber":"",
 	"sign":"",
 	"profession":""
 }
