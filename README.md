@@ -38,7 +38,7 @@
 	"name":"",
 	"sex":0,
 	"age":24,
-	"mobilePhone":"",
+	"idNumber":"",
 	"sign":"",
 	"profession":"",
 	"creditLevel":3,
