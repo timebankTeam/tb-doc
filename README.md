@@ -272,6 +272,27 @@
 }
 ```
 
+## 6.7 Campaign evaluation
+### Url
+	/campaign/cancel
+### Method
+	POST
+### Request
+``` json
+{
+	"userId":"",
+	"campaignId":""
+}
+```
+
+### Response
+``` json
+{
+	"status":0,
+	"errorMsg":""
+}
+```
+
 
 ## 6.7 User evaluation
 ### Url
