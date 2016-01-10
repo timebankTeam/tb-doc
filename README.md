@@ -158,7 +158,8 @@
 	"mobilePhone":"",
 	"description":"",
 	"campaignStatus":1,
-	"campaignId":""
+	"campaignId":"",
+	"isJoined":"true"
 }
 ```
 
