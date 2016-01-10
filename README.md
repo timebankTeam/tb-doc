@@ -294,7 +294,7 @@
 ```
 
 
-## 6.7 User evaluation
+## 6.8 User evaluation
 ### Url
 	/user/evaluation
 ### Method
@@ -317,7 +317,7 @@
 }
 ```
 
-## 6.8 Evaluation
+## 6.9 Evaluation
 ### Url
 	/campaign/users
 ### Method
