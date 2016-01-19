@@ -337,3 +337,39 @@
 	"nickName":""
 }
 ```
+
+## 7. User Avatar
+### 7.1 Upload Avatar
+### Url
+       /user/avatar
+### Method
+       POST
+### Request
+```
+{
+        "userId":"",
+        "image":"imageFileName", fileBytes[]
+}
+```
+### Response
+``` json
+{
+        "status":0
+}
+```
+
+### 7.2 Get Avatar
+### Url
+        /user/avatar
+### Method
+        GET
+### Request
+``` json
+{
+        "userId":""
+}
+```
+### Response
+```
+fileBytes[]
+```
