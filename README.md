@@ -257,11 +257,12 @@
 ### Request
 ``` json
 {
-	"userId":"",
+	"appraiser":"",
 	"campaignId":"",
-	"campaignOwner":"",
-	"comments":"",
-	"starLevel":""
+	"appraisee":"",
+	"content":"",
+	"score":9,
+        "dateTime":100000000
 }
 ```
 
@@ -272,7 +273,7 @@
 }
 ```
 
-## 6.7 Campaign evaluation
+## 6.7 Quit Campaign 
 ### Url
 	/campaign/cancel
 ### Method
@@ -292,7 +293,6 @@
 	"errorMsg":""
 }
 ```
-
 
 ## 6.8 User evaluation
 ### Url
@@ -317,9 +317,9 @@
 }
 ```
 
-## 6.9 Evaluation
+## 6.9 Get Campaign Evaluation
 ### Url
-	/campaign/users
+	/campaign/evaluations
 ### Method
 	GET
 ### Request
@@ -332,9 +332,19 @@
 ### Response
 ``` json
 {
-	"userId":"",
-	"userName":"",
-	"nickName":""
+        [
+            {
+                "avatarUrl":"",
+                "content":"",
+                "appraiser":"",
+                "campaignId":"",
+                "appraisee":"",
+                "nickName":"",
+                "dateTime":10000000,
+                "score":10
+            },
+            ...
+        ]
 }
 ```
 
