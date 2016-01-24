@@ -383,3 +383,11 @@
 ```
 fileBytes[]
 ```
+
+## 8.Evalution push content
+### 评价内容json格式
+``` json
+{
+	evalutionContent:"", appraiser:"评价人的id号", appraisee:"被评价人的id"
+}
+```
