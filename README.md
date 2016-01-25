@@ -350,7 +350,7 @@
 
 ## 6.10 获取活动所有参与人员
 ### Url
-	/campaign/users
+	/campaigns/users
 ### Method
 	GET
 ### Request
