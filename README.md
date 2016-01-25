@@ -348,6 +348,27 @@
 }
 ```
 
+## 6.10 获取活动所有参与人员
+### Url
+	/campaign/users
+### Method
+	GET
+### Request
+``` json
+{
+	"campaignId":"活动id"
+}
+```
+
+### Response
+``` json
+{
+	status:1,
+	errorMsg:"失败原因，正确时为空",
+	users:[{userId:"", avatarUrl:"", nickName:""}], [{}], [{}]
+}
+
+
 ## 7. User Avatar
 ### 7.1 Upload Avatar
 ### Url
